@@ -1,0 +1,260 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+.navbar ul li{
+    font-family: century;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 25px;
+}
+.navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 20px pink;
+    border-radius: 10px 10px 10px 10px;
+}
+#Home{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#Home::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: url('Marken_BMW_Group_Range.jpg') no-repeat center center/cover;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white transparent;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+}
+.headings{
+    font-family: century;
+    font-size: 3rem;
+    text-align: center;
+    margin: 40px 0px;
+}
+.btn{
+    padding: 10px 35px;
+    background-color: transparent;
+    border : 1px solid white;
+    color : white;
+    outline : none;
+    transition: .6s ease;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 50px,0 0 40px pink;
+    font-weight: bold;
+}
+
+
+
+/* Add this CSS to your existing stylesheet or in a new <style> tag in your HTML */
+
+/* Style for the Services Section */
+#services {
+    background-color: #f8f8f8; /* Set your desired background color */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#services h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Style for Each Service Box */
+.box {
+    width: 30%; /* Adjust the width as needed */
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd; /* Set border color */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+.box img {
+    max-width: 80px; /* Adjust the max-width of the icon */
+    margin-bottom: 15px;
+}
+
+.box h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.box p {
+    font-size: 1rem;
+    color: #666; /* Set text color */
+}
+
+
+.btn.orange-btn {
+    background-color: rgb(0, 128, 255);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn.orange-btn:hover {
+    background-color: rgb(0, 149, 255);
+}
+
+#WhyUs .reasons-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+#WhyUs .reason {
+    flex: 0 0 23%; /* Adjust the width as needed */
+    text-align: center;
+    margin: 10px;
+}
+
+#WhyUs img {
+    max-width: 80px; /* Adjust the logo size */
+    margin-bottom: 10px; /* Add some spacing between logo and text */
+}
+
+#WhyUs h3 {
+    font-size: 1.5rem;
+    color: #555;
+}
+
+#WhyUs p {
+    font-size: 1.2rem;
+    color: #777;
+}
+#WhyUs h2{
+    text-align: center;
+}
+
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 20px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 20px;
+}
+.input{
+    padding: 10px;
+    margin: 10px;
+    width: 20%;
+    border: none;
+    
+}
+
+#contact{
+    padding: 20px;
+    background-color:#ffff;
+    color: rgb(9, 2, 2);
+}
+
+.navbar, .row, .contact-sections {
+    display: flex;
+   
+}
+
+.contact-section {
+    flex: 1;
+    text-align: center;
+    margin: 0 10px;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin: 10px 0;
+}
+
+/* Social Media Icons Styling */
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-media img:hover {
+    transform: scale(1.2);
+}
+
+@media only screen and (max-width: 768px) {
+    /* Your responsive styles here */
+}
